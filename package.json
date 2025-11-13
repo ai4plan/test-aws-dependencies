@@ -7,7 +7,9 @@
     "aws-amplify": "6.15.8"
   },
   "scripts": {
-    "amplify": "cd amplify && npm install && npm ls --all --json > npm-ls-all.json && cd .. && node generate-dependencies-json.mjs amplify"
+    "amplify":          "cd amplify          && npm install && npm ls --all --json > npm-ls-all.json && npm ls --depth 1 --json > npm-ls-1.json && cd .. && node generate-dependencies-json.mjs amplify",
+    "amplify-ui-react": "cd amplify-ui-react && npm install && npm ls --all --json > npm-ls-all.json && npm ls --depth 1 --json > npm-ls-1.json && cd .. && node generate-dependencies-json.mjs amplify-ui-react",
+    "amplify-specific": "cd amplify-specific && npm install && npm ls --all --json > npm-ls-all.json && npm ls --depth 1 --json > npm-ls-1.json && cd .. && node generate-dependencies-json.mjs amplify-specific"
   }
 }
 
