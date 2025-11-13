@@ -4,7 +4,9 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@aws-amplify/ui-react": "6.13.1"
+    "@aws-amplify/ui-react": "6.13.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "scripts": {
     "test": "npm i && npm run ls && npm run gen",
@@ -12,5 +14,3 @@
     "gen": "node ../generate-dependencies-json.mjs ui-only"
   }
 }
-
-

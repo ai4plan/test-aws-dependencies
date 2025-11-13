@@ -1,4 +1,41 @@
-# aws-amplify vs @aws-amplyfy/*
+# aws-amplify vs @aws-amplify/* vs @aws-amplify/ui*
+
+
+## aws-amplify/amplify-js -> packages @aws-amplify/ui*
+
+github repo https://github.com/aws-amplify/amplify-js
+
+publishes
+
+the big
+- https://www.npmjs.com/package/aws-amplify
+ 
+the small
+- https://www.npmjs.com/package/@aws-amplify/analytics"
+- https://www.npmjs.com/package/@aws-amplify/api"
+- https://www.npmjs.com/package/@aws-amplify/auth"
+- https://www.npmjs.com/package/@aws-amplify/core"
+- https://www.npmjs.com/package/@aws-amplify/datastore"
+- https://www.npmjs.com/package/@aws-amplify/notifications"
+- https://www.npmjs.com/package/@aws-amplify/storage"
+- ...
+  
+
+## github aws-amplify/amplify-ui -> packages @aws-amplify/ui*
+
+doc https://ui.docs.amplify.aws/react
+
+github repo https://github.com/aws-amplify/amplify-ui
+
+publishes
+- https://www.npmjs.com/package/@aws-amplify/ui
+- https://www.npmjs.com/package/@aws-amplify/ui-react
+- https://www.npmjs.com/package/@aws-amplify/ui-react-core"
+- https://www.npmjs.com/package/@aws-amplify/ui-react-notifications"
+- https://www.npmjs.com/package/@aws-amplify/ui-react-storage"
+- ...
+
+
 
 ## the react ui packages do have a peer dependency to the big `aws-amplify`
 

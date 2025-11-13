@@ -1,13 +1,14 @@
-# no-ui
+# ui-only
 
-```
+```json
   "dependencies": {
-    "@aws-amplify/auth": "6.17.0",
-    "@aws-amplify/core": "6.14.0",
-    "@aws-amplify/datastore": "5.1.1",
-    "@aws-amplify/notifications": "2.0.89",
-    "@aws-amplify/storage": "6.10.1"
+    "@aws-amplify/ui-react": "6.13.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
 ```
 
-DOES NOT PULL aws-amplify ! NICE !
+
+we added `react` and `react-dom` to avoid the error
+`peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from @xstate/react@3.2.2`
+

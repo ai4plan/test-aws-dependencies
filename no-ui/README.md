@@ -1,6 +1,6 @@
 # no-ui
 
-```
+```json
   "dependencies": {
     "@aws-amplify/auth": "6.17.0",
     "@aws-amplify/core": "6.14.0",
@@ -10,4 +10,4 @@
   },
 ```
 
-DOES NOT PULL aws-amplify ! NICE !
+Does NOT pull aws-amplify ! NICE !

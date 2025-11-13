@@ -1,0 +1,7 @@
+# big
+
+```json
+  "dependencies": {
+    "aws-amplify": "6.15.8"
+  },
+```
