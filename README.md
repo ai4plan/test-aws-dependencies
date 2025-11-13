@@ -1,56 +1,37 @@
-# test-aws-dependencies
+# aws-amplify vs @aws-amplyfy/*
 
-Tests the consistency of nested dependencies of aws-amplify and aws-sdk
+## the react ui packages do have a peer dependency to the big `aws-amplify`
 
-usage
-- run `npm run amplify` to generate `amplify/dependencies.json`
-- run `npm run amplify-ui-react` to generate `amplify-ui-react/dependencies.json`
-- ...
+see https://github.com/aws-amplify/amplify-ui/blob/main/package.json
 
-
-annoying dependency
-
-
-# `@aws-amplify/ui-react` depends on `aws-amplify` as a peer dependecy
-
-```json
-  "peerDependencies": {
-    "@aws-amplify/core": "*",
-    "aws-amplify": "^6.14.3",
-    "react": "^16.14.0 || ^17.0 || ^18.0 || ^19",
-    "react-dom": "^16.14 || ^17 || ^18 || ^19"
-  },
-  "peerDependenciesMeta": {
-    "aws-amplify": {
-      "optional": true
-    }
-  },
+```
+"@aws-amplify/ui-react"                     "peerDependencies": { "aws-amplify": "^6.14.3" }
+                                            "peerDependenciesMeta": { "aws-amplify": { "optional": true } },
+"@aws-amplify/ui-react-ai",                 "peerDependencies": { "aws-amplify": "^6.14.3" } 
+"@aws-amplify/ui-react-core"                "peerDependencies": { "aws-amplify": "^6.14.3" } 
+"@aws-amplify/ui-react-core-notifications"  "peerDependencies": { "aws-amplify": "^6.14.3" } 
+"@aws-amplify/ui-react-geo"                 "peerDependencies": { "aws-amplify": "^6.14.3" } 
+"@aws-amplify/ui-react-liveness"            "peerDependencies": { "aws-amplify": "^6.14.3" } 
+"@aws-amplify/ui-react-native"              "peerDependencies": { "aws-amplify": "^6.14.3" } 
+"@aws-amplify/ui-react-notifications"       "peerDependencies": { "aws-amplify": "^6.14.3" } 
+"@aws-amplify/ui-react-storage"             "peerDependencies": { "aws-amplify": "^6.14.3" } 
+"@aws-amplify/ui"                           "peerDependencies": { "aws-amplify": "^6.14.3" } 
 ```
 
 
+## react ui examples use Amplify.configure()
+
+It seems that all examples in https://github.com/aws-amplify/amplify-ui/blob/main/examples/README.md
+use `aws-amplify` ONLY to call `Amplify.configure(awsExports)`
+
 ```
-$ npm info @aws-amplify/ui peerDependencies
-{
-  xstate: '^4.33.6',
-  'aws-amplify': '^6.14.3',
-  '@aws-amplify/core': '*'
-}
-
-$ npm info @aws-amplify/ui-react peerDependencies
-{
-  react: '^16.14.0 || ^17.0 || ^18.0 || ^19',
-  'react-dom': '^16.14 || ^17 || ^18 || ^19',
-  'aws-amplify': '^6.14.3',
-  '@aws-amplify/core': '*'
-}
-
-$ npm info @aws-amplify/ui-react-core peerDependencies
-{ react: '^16.14 || ^17 || ^18 || ^19', 'aws-amplify': '^6.14.3' }
+import { Amplify } from 'aws-amplify';
+//...
+Amplify.configure(awsExports);
 ```
 
 
-
-TO AVOID INSTALLING aws-amplify ?
+# how to workaround this peer dependency ?
 
 
 DOES THIS WORK ??
@@ -97,9 +78,8 @@ Default: false
 If set to true, and --legacy-peer-deps is not set, then any conflicting peerDependencies will be treated as an install failure, even if npm could reasonably guess the appropriate resolution based on non-peer dependency relationships.
 
 
-
-
 # --prefer-dedup
+
 https://docs.npmjs.com/cli/v11/commands/npm-install#prefer-dedupe
 
 

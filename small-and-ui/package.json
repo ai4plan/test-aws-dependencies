@@ -12,5 +12,14 @@
     "@aws-amplify/storage": "6.10.1",
     "react": "18.3.1",
     "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.26",
+    "@types/react-dom": "18.3.7"
+  },
+  "scripts": {
+    "test": "npm i && npm run ls && npm run gen",
+    "ls": "npm ls --all --json > npm-ls-all.json && npm ls --depth 1 --json > npm-ls-1.json",
+    "gen": "node ../generate-dependencies-json.mjs small-and-ui"
   }
 }
