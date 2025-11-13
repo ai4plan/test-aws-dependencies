@@ -1,0 +1,13 @@
+# Node.js
+node_modules/
+.env
+.DS_Store
+npm-debug.log*
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# output files
+amplify/npm-ls-all.json
+amplify/dependencies.json

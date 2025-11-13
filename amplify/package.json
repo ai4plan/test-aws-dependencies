@@ -1,0 +1,11 @@
+{
+  "name": "test-aws-dependencies-amplify6.15.8",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "aws-amplify": "6.15.8"
+  }
+}
+
+

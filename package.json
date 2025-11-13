@@ -1,0 +1,14 @@
+{
+  "name": "test-aws-dependencies",
+  "version": "0.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "aws-amplify": "6.15.8"
+  },
+  "scripts": {
+    "amplify": "cd amplify && npm install && npm ls --all --json > npm-ls-all.json && cd .. && node generate-dependencies-json.mjs amplify"
+  }
+}
+
+
