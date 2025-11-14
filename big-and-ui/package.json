@@ -1,7 +1,7 @@
 {
   "name": "big-and-ui",
   "version": "0.0.0",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "6.13.1",
@@ -12,7 +12,7 @@
   "scripts": {
     "test": "npm i && npm run ls && npm run gen",
     "ls": "npm ls --all --json > npm-ls-all.json && npm ls --depth 1 --json > npm-ls-1.json",
-    "gen": "node ../generate-dependencies-json.mjs big-and-ui"
+    "gen": "node --experimental-strip-types ../generate-dependencies-json.mts big-and-ui"
   }
 }
   
