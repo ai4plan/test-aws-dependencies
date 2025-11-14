@@ -10,4 +10,6 @@
   },
 ```
 
-Does NOT pull aws-amplify ! NICE !
+# results
+
+[dependencies-all.json](./dependencies-all.json) does NOT contain `"aws-amplify"`

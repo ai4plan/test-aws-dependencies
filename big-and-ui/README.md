@@ -9,5 +9,6 @@
   },
 ```
 
+# results
 
-
+[dependencies-all.json](./dependencies-all.json) DOES contain `"aws-amplify"`

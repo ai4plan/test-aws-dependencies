@@ -8,7 +8,10 @@
   },
 ```
 
-
 we added `react` and `react-dom` to avoid the error
 `peer react@"^16.8.0 || ^17.0.0 || ^18.0.0" from @xstate/react@3.2.2`
 
+
+# results
+
+[dependencies-all.json](./dependencies-all.json) DOES contain `"aws-amplify"`
