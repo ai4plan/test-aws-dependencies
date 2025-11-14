@@ -6,6 +6,16 @@
   "devDependencies": {
     "@types/node": "24.10.1",
     "typescript": "5.9.3"
+  },
+  "scripts": {
+    "big":                "cd big                && npm run test",
+    "big-and-ui":         "cd big-and-ui         && npm run test",
+    "lean":               "cd lean               && npm run test",
+    "no-ui":              "cd no-ui              && npm run test",
+    "small-and-ui-dummy": "cd small-and-ui-dummy && npm run test",
+    "ui-only":            "cd ui-only            && npm run test",
+
+    "all": "npm run big && npm run big-and-ui && npm run lean && npm run no-ui && npm run small-and-ui-dummy && npm run ui-only"
   }
 }
 
