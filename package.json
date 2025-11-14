@@ -8,14 +8,15 @@
     "typescript": "5.9.3"
   },
   "scripts": {
-    "big":                "cd big                && npm run test",
-    "big-and-ui":         "cd big-and-ui         && npm run test",
-    "lean":               "cd lean               && npm run test",
-    "no-ui":              "cd no-ui              && npm run test",
-    "small-and-ui-dummy": "cd small-and-ui-dummy && npm run test",
-    "ui-only":            "cd ui-only            && npm run test",
+    "big":                "cd big                && npm i",
+    "big-and-ui":         "cd big-and-ui         && npm i",
+    "lean":               "cd lean               && npm i",
+    "no-ui":              "cd no-ui              && npm i",
+    "small-and-ui-dummy": "cd small-and-ui-dummy && npm i",
+    "ui-only":            "cd ui-only            && npm i",
+    "final":              "cd final              && npm i",
 
-    "all": "npm run big && npm run big-and-ui && npm run lean && npm run no-ui && npm run small-and-ui-dummy && npm run ui-only"
+    "all": "npm run big && npm run big-and-ui && npm run lean && npm run no-ui && npm run small-and-ui-dummy && npm run ui-only && npm run final"
   }
 }
 
