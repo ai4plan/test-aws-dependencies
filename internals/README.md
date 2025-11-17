@@ -1,4 +1,4 @@
-# no-ui
+# internals
 
 ```json
   "dependencies": {

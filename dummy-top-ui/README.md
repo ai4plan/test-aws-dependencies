@@ -1,4 +1,4 @@
-# small-and-ui-dummy
+# dummy-top-ui
 
 ```json
   "dependencies": {

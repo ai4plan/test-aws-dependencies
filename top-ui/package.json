@@ -1,5 +1,5 @@
 {
-  "name": "big-and-ui",
+  "name": "top-ui",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -12,7 +12,7 @@
   "scripts": {
     "postinstall": "npm run ls && npm run gen",
     "ls": "npm ls --all --json > npm-ls-all.json && npm ls --depth 1 --json > npm-ls-1.json",
-    "gen": "node --experimental-strip-types ../generate-dependencies-json.mts big-and-ui"
+    "gen": "node --experimental-strip-types ../generate-dependencies-json.mts top-ui"
   }
 }
   
