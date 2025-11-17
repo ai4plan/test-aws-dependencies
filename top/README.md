@@ -8,4 +8,7 @@
 
 # results
 
-[dependencies-all.json](./dependencies-all.json) DOES contain `"aws-amplify"`
+[dependencies-all.json](./dependencies-all.json)
+- DOES contain `"aws-amplify"`
+- DOES contain `@aws-amplify/auth`
+
