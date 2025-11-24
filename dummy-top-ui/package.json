@@ -24,6 +24,7 @@
   "scripts": {
     "postinstall": "npm run ls && npm run gen",
     "ls": "npm ls --all --json > npm-ls-all.json && npm ls --depth 1 --json > npm-ls-1.json",
-    "gen": "node --experimental-strip-types ../generate-dependencies-json.mts dummy-top-ui"
+    "gen": "node --experimental-strip-types ../generate-dependencies-json.mts dummy-top-ui",
+    "tc" : "tsc"
   }
 }
