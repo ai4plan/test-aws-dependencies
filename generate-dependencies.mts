@@ -181,7 +181,7 @@ async function generate_dependencies_svg(
 //--------------------------------------------------------------------------------------------------
 const folder = process.argv[2];
 if (!folder) {
-  console.error("Usage: node generate-dependencies-json.mjs <folder>");
+  console.error("Usage: node generate-dependencies.mts <folder>");
   process.exit(1);
 }
 

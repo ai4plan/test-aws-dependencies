@@ -1,5 +1,5 @@
 {
-  "name": "top",
+  "name": "test-aws-amplify",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -8,8 +8,8 @@
   },
   "scripts": {
     "postinstall": "npm run ls && npm run gen && npm run tc",
-    "ls": "npm ls --all --json > npm-ls-all.json && npm ls --depth 1 --json > npm-ls-1.json",
-    "gen": "node --experimental-strip-types ../generate-dependencies-json.mts top",
+    "ls": "npm ls --all --json > npm-ls-all.json",
+    "gen": "node --experimental-strip-types ../generate-dependencies-json.mts test-aws-amplify",
     "tc": "tsc"
   }
 }

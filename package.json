@@ -1,5 +1,5 @@
 {
-  "name": "ui-only",
+  "name": "test-aws-dependencies",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -9,11 +9,10 @@
     "graphviz-cli": "2.0.0"
   },
   "scripts": {
-    "ai4plan-client":          "cd ai4plan-client          && npm i",
-    "top":                     "cd top                     && npm i",
-    "top-ui":                  "cd top-ui                  && npm i",
-    "ui-only":                 "cd ui-only                 && npm i",
-    "all": "npm run ai4plan-client && npm run top && npm run top-ui && npm run ui-only"
+    "ai4plan-client":              "cd ai4plan-client              && npm i",
+    "test-aws-amplify":            "cd test-aws-amplify            && npm i",
+    "test-aws-amplify-ui-react":   "cd test-aws-amplify-ui-react   && npm i",
+    "all": "npm run ai4plan-client && npm run test-aws-amplify && npm run test-aws-amplify-ui-react"
   }
 }
 

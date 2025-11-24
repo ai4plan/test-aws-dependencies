@@ -8,5 +8,6 @@ npm-debug.log*
 Thumbs.db
 Desktop.ini
 
-# intermediate files
-**/npm-ls-*.json
+# output files
+**/npm-ls*.json
+#**/dependencies-*
