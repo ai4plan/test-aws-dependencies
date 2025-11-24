@@ -189,13 +189,13 @@ const folderAbsDir = `${import.meta.dirname}/${folder}`;
 
 generate_dependencies_json(
   `${folderAbsDir}/npm-ls-all.json`,
-  `${folderAbsDir}/dependencies-all.json`,
+  `${folderAbsDir}/dependencies.json`,
   "without_parents"
 );
 
 generate_dependencies_json(
   `${folderAbsDir}/npm-ls-all.json`,
-  `${folderAbsDir}/dependencies-all-parents.json`,
+  `${folderAbsDir}/dependencies-parents.json`,
   "with_parents"
 );
 
@@ -213,7 +213,7 @@ function filter(node: string): boolean {
 
 await generate_dependencies_svg(
   `${folderAbsDir}/npm-ls-all.json`,
-  `${folderAbsDir}/dependencies-all.svg`,
+  `${folderAbsDir}/dependencies.svg`,
   (parent) => filter(parent),
   (child) => filter(child)
 );
