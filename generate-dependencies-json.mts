@@ -199,24 +199,21 @@ generate_dependencies_json(
   "with_parents"
 );
 
-// COMMENTED OUT BECAUSE NOT INTERESTING
-// generate_dependencies_json(
-//   `${folderAbsDir}/npm-ls-1.json`,
-//   `${folderAbsDir}/dependencies-1.json`,
-//   "without_parents"
-// );
-
-// COMMENTED OUT BECAUSE NOT INTERESTING
-// generate_dependencies_svg(
-//   `${folderAbsDir}/npm-ls-1.json`,
-//   `${folderAbsDir}/dependencies-1.svg`,
-//   (parent) => parent.includes("aws-amplify") || parent === "root",
-//   (child) => child.includes("aws-amplify") && child !== "@aws-amplify/core"
-// );
+function filter(node: string): boolean {
+  return (
+    node.includes("aws-amplify") ||
+    //node.includes("@aws-sdk") ||
+    //node.includes("@smithy") ||
+    node === "root"
+  ) && 
+    node !== "@aws-amplify/core" &&
+    node !== "@aws-sdk/core" &&
+    node !== "@aws-sdk/types"
+} // prettier-ignore
 
 await generate_dependencies_svg(
   `${folderAbsDir}/npm-ls-all.json`,
   `${folderAbsDir}/dependencies-all.svg`,
-  (parent) => parent.includes("aws-amplify") || parent === "root",
-  (child) => child.includes("aws-amplify") && child !== "@aws-amplify/core"
+  (parent) => filter(parent),
+  (child) => filter(child)
 );

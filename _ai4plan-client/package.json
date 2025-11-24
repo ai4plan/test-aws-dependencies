@@ -5,17 +5,31 @@
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "6.13.1",
-
-    "@aws-amplify/analytics": "file:./dummy-aws-amplify/analytics",
+    "@aws-amplify/analytics": "file:../ai4plan-dummy-aws-amplify/analytics",
     "@aws-amplify/api": "6.3.20",
-    "@aws-amplify/api-graphql": "file:./dummy-aws-amplify/api-graphql",
+    "@aws-amplify/api-graphql": "file:../ai4plan-dummy-aws-amplify/api-graphql",
     "@aws-amplify/api-rest": "4.5.0",
     "@aws-amplify/auth": "6.17.0",
     "@aws-amplify/core": "6.14.0",
-    "@aws-amplify/datastore": "file:./dummy-aws-amplify/datastore",
+    "@aws-amplify/datastore": "file:../ai4plan-dummy-aws-amplify/datastore",
     "@aws-amplify/notifications": "2.0.89",
     "@aws-amplify/storage": "6.10.1",
 
+    "@aws-sdk/client-dynamodb": "3.931.0",
+    "@aws-sdk/client-s3": "3.931.0",
+    "@aws-sdk/types": "3.930.0",
+    "@aws-sdk/lib-dynamodb": "3.931.0",
+    "@aws-sdk/s3-request-presigner": "3.931.0",
+
+    "@aws-sdk/client-sts": "3.931.0",
+    "@aws-sdk/credential-providers": "3.931.0",
+    "@aws-sdk/client-cognito-identity-provider": "3.931.0",
+
+    "@smithy/util-utf8": "4.2.0",
+    "@smithy/is-array-buffer": "4.2.0",
+    "@smithy/util-hex-encoding": "4.2.0",
+    "@smithy/types": "4.9.0",
+        
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
