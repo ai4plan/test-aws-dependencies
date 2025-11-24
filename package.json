@@ -5,10 +5,11 @@
   "private": true,
   "devDependencies": {
     "@types/node": "24.10.1",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "graphviz-cli": "2.0.0"
   },
   "scripts": {
-    "dummy-top-ui":            "cd dummy-top-ui            && npm i",
+    "ai4plan-client":          "cd _ai4plan-client         && npm i",
     "internals":               "cd internals               && npm i",
     "internals-ui":            "cd internals-ui            && npm i",
     "top":                     "cd top                     && npm i",

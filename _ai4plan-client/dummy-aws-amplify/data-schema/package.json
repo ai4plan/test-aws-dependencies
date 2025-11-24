@@ -1,0 +1,6 @@
+{
+	"name": "@aws-amplify/data-schema",
+	"version": "1.22.0",
+	"dependencies": {
+	}
+}

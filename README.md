@@ -9,14 +9,7 @@ mismatches in your project
 https://www.npmjs.com/package/@aws-amplify/auth says:
 This package contains the AWS Amplify Auth category and is intended for internal use only. To integrate Amplify into your app, please use aws-amplify.
 
-
 All examples use `aws-amplify/auth` and NOT `@aws-amplify/auth`
-
-Another weird issue: **aws-amplify/auth and @aws-amplify/atuh don't have the same types !**
-
-
-
-
 
 ## aws-amplify/amplify-js -> packages @aws-amplify/ui*
 
@@ -37,6 +30,10 @@ the internal
 - https://www.npmjs.com/package/@aws-amplify/storage"
 - ...
   
+
+
+
+
 
 ## github aws-amplify/amplify-ui -> packages @aws-amplify/ui*
 
