@@ -1,0 +1,20 @@
+digraph G {
+ rankdir="LR";
+ node [shape=rect, style=rounded];
+"root" -> { "@aws-amplify/ui-react" };
+"@aws-amplify/ui-react" -> { "@aws-amplify/ui-react-core" "@aws-amplify/ui" "aws-amplify" };
+"@aws-amplify/ui-react-core" -> { "@aws-amplify/ui" "aws-amplify" };
+"@aws-amplify/ui" -> { "aws-amplify" };
+"aws-amplify" -> { "@aws-amplify/analytics" "@aws-amplify/api" "@aws-amplify/auth" "@aws-amplify/datastore" "@aws-amplify/notifications" "@aws-amplify/storage" };
+"@aws-amplify/analytics" -> {  };
+"@aws-amplify/api" -> { "@aws-amplify/api-graphql" "@aws-amplify/api-rest" "@aws-amplify/data-schema" };
+"@aws-amplify/api-graphql" -> { "@aws-amplify/api-rest" "@aws-amplify/data-schema" };
+"@aws-amplify/api-rest" -> {  };
+"@aws-amplify/data-schema" -> { "@aws-amplify/data-schema-types" };
+"@aws-amplify/data-schema-types" -> {  };
+"@aws-amplify/auth" -> { "@aws-amplify/react-native" };
+"@aws-amplify/react-native" [shape=rect, style="rounded,filled", fillcolor="#ffcccc"];
+"@aws-amplify/datastore" -> { "@aws-amplify/api-graphql" "@aws-amplify/api" };
+"@aws-amplify/notifications" -> {  };
+"@aws-amplify/storage" -> {  };
+}

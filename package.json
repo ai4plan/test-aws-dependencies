@@ -9,13 +9,11 @@
     "graphviz-cli": "2.0.0"
   },
   "scripts": {
-    "ai4plan-client":          "cd _ai4plan-client         && npm i",
-    "internals":               "cd internals               && npm i",
-    "internals-ui":            "cd internals-ui            && npm i",
+    "ai4plan-client":          "cd ai4plan-client          && npm i",
     "top":                     "cd top                     && npm i",
     "top-ui":                  "cd top-ui                  && npm i",
-    "top-ui-dummy-analytics":  "cd top-ui-dummy-analytics  && npm i",
-    "ui-only":                 "cd ui-only                 && npm i"
+    "ui-only":                 "cd ui-only                 && npm i",
+    "all": "npm run ai4plan-client && npm run top && npm run top-ui && npm run ui-only"
   }
 }
 

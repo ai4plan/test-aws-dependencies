@@ -68,6 +68,16 @@ see https://github.com/aws-amplify/amplify-ui/blob/main/package.json
 ```
 
 
+# @aws-amplify/ui-react code imports `aws-amplify/storage` and `aws-amplify/storage`
+
+`@aws-amplify/ui-react` code does import from `aws-amplify/storage` and `aws-amplify/storage`
+(instead of `@aws-amplify/storage` and `aws-amplify/storage`)
+
+see https://github.com/aws-amplify/amplify-ui/blob/%40aws-amplify/ui-react%406.13.1/packages/react/src/hooks/useAuth.ts
+
+
+
+
 ## react ui examples use Amplify.configure()
 
 It seems that all examples in https://github.com/aws-amplify/amplify-ui/blob/main/examples/README.md
