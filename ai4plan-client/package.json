@@ -45,7 +45,7 @@
   },
   "scripts": {
     "postinstall": "npm run ls && npm run gen",
-    "ls": "npm ls --all --json > npm-ls-all.json",
+    "ls": "npm ls --all --json > output/npm-ls-all.json",
     "gen": "node --experimental-strip-types ../generate-dependencies.mts ai4plan-client",
     "tc" : "tsc"
   }

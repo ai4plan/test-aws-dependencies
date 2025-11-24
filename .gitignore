@@ -10,4 +10,5 @@ Desktop.ini
 
 # output files
 **/npm-ls*.json
-**/dependencies-*
+*/output/**
+!*/output/_do_not_remove.txt
