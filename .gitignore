@@ -10,4 +10,4 @@ Desktop.ini
 
 # output files
 **/npm-ls*.json
-#**/dependencies-*
+**/dependencies-*
