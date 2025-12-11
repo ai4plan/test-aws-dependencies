@@ -9,10 +9,16 @@
     "graphviz-cli": "2.0.0"
   },
   "scripts": {
-    "ai4plan-client":              "cd ai4plan-client              && npm i",
-    "test-aws-amplify":            "cd test-aws-amplify            && npm i",
-    "test-aws-amplify-ui-react":   "cd test-aws-amplify-ui-react   && npm i",
-    "all": "npm run ai4plan-client && npm run test-aws-amplify && npm run test-aws-amplify-ui-react"
+    "install-ai4plan-client":              "cd ai4plan-client              && npm i",
+    "install-test-aws-amplify":            "cd test-aws-amplify            && npm i",
+    "install-test-aws-amplify-ui-react":   "cd test-aws-amplify-ui-react   && npm i",
+    "install-all": "npm run install-ai4plan-client && npm run install-test-aws-amplify && npm run install-test-aws-amplify-ui-react",
+
+    "clean-install-ai4plan-client":              "cd ai4plan-client              && npm run clean-install",
+    "clean-install-test-aws-amplify":            "cd test-aws-amplify            && npm run clean-install",
+    "clean-install-test-aws-amplify-ui-react":   "cd test-aws-amplify-ui-react   && npm run clean-install",
+    "clean-install-all": "npm run clean-install-ai4plan-client && npm run clean-install-test-aws-amplify && npm run clean-install-test-aws-amplify-ui-react"
+
   }
 }
 

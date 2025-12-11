@@ -7,6 +7,7 @@
     "aws-amplify": "6.15.8"
   },
   "scripts": {
+    "cleaninstall": "rm -rf node_modules package-lock.json && npm install",
     "postinstall": "npm run ls && npm run gen && npm run tc",
     "ls": "npm ls --all --json > output/npm-ls-all.json",
     "gen": "node --experimental-strip-types ../generate-dependencies.mts test-aws-amplify",

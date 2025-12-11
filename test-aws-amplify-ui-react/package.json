@@ -9,6 +9,7 @@
     "react-dom": "18.3.1"
   },
   "scripts": {
+    "cleaninstall": "rm -rf node_modules package-lock.json && npm install",
     "postinstall": "npm run ls && npm run gen",
     "ls": "npm ls --all --json > output/npm-ls-all.json",
     "gen": "node --experimental-strip-types ../generate-dependencies.mts test-aws-amplify-ui-react"
