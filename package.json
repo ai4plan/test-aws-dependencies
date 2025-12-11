@@ -9,16 +9,13 @@
     "graphviz-cli": "2.0.0"
   },
   "scripts": {
-    "install-ai4plan-client":              "cd ai4plan-client              && npm i",
-    "install-test-aws-amplify":            "cd test-aws-amplify            && npm i",
-    "install-test-aws-amplify-ui-react":   "cd test-aws-amplify-ui-react   && npm i",
-    "install-all": "npm run install-ai4plan-client && npm run install-test-aws-amplify && npm run install-test-aws-amplify-ui-react",
+    "amplify":          "cd amplify            && npm run clean_install",
+    "amplify-ui":       "cd amplify-ui         && npm run clean_install",
+    "amplify-ui-sdk":   "cd amplify-ui-sdk     && npm run clean_install",
+    "amplify-ui-sdk-2": "cd amplify-ui-sdk-2   && npm run clean_install",
 
-    "clean-install-ai4plan-client":              "cd ai4plan-client              && npm run clean-install",
-    "clean-install-test-aws-amplify":            "cd test-aws-amplify            && npm run clean-install",
-    "clean-install-test-aws-amplify-ui-react":   "cd test-aws-amplify-ui-react   && npm run clean-install",
-    "clean-install-all": "npm run clean-install-ai4plan-client && npm run clean-install-test-aws-amplify && npm run clean-install-test-aws-amplify-ui-react",
-
+    "clean_install_all": "npm run amplify && npm run amplify-ui && npm run amplify-ui-sdk && npm run amplify-ui-sdk-2",
+        
     "diff": "code --diff '../ai4plan/client/package.json' 'ai4plan-client/package.json'"
   }
 }

@@ -3,7 +3,7 @@ import * as fs from 'node:fs'
 
 //--------------------------------------------------------------------------------------------------
 function writeFile(absPath: string, content: string) {
-  console.log(`Writing ${absPath}`)
+  console.log(`>> Writing file ${absPath}`)
   fs.mkdirSync(absPath.substring(0, absPath.lastIndexOf('/')), { recursive: true })
   fs.writeFileSync(absPath, content)
 }
@@ -28,7 +28,7 @@ type NpmLsNode = {
 }
 
 //--------------------------------------------------------------------------------------------------
-function generate_dependencies_json(
+function gen_deps_json(
   inputAbsPath: string,
   outputAbsPath: string,
   singleVersionMode: 'with_parents' | 'without_parents'
@@ -95,7 +95,7 @@ function addToGraph(graph: Map<string, Set<string>>, parent: string, child: stri
 }
 
 //--------------------------------------------------------------------------------------------------
-async function generate_dependencies_svg(
+async function gen_dep_svg(
   inputAbsPath: string,
   outputAbsPath: string,
   filter_parent: (parent: string) => boolean,
@@ -173,17 +173,17 @@ if (!folder) {
   process.exit(1)
 }
 
-const outputAbsDir = `${import.meta.dirname}/${folder}/output`
+console.log('')
+console.log('-----------------------------------------------------------------')
+console.log(`Generating deps json for folder: ${folder}`)
 
-generate_dependencies_json(
-  `${outputAbsDir}/npm-ls-all.json`,
-  `${outputAbsDir}/dependencies.json`,
-  'without_parents'
-)
+const outputAbsDir = `${process.cwd()}/output`
 
-generate_dependencies_json(
-  `${outputAbsDir}/npm-ls-all.json`,
-  `${outputAbsDir}/dependencies-parents.json`,
+gen_deps_json(`${outputAbsDir}/npm_ls_all.json`, `${outputAbsDir}/deps.json`, 'without_parents')
+
+gen_deps_json(
+  `${outputAbsDir}/npm_ls_all.json`,
+  `${outputAbsDir}/deps_parents.json`,
   'with_parents'
 )
 
@@ -199,9 +199,9 @@ function filter(node: string): boolean {
     node !== "@aws-sdk/types"
 } // prettier-ignore
 
-await generate_dependencies_svg(
-  `${outputAbsDir}/npm-ls-all.json`,
-  `${outputAbsDir}/dependencies.svg`,
+await gen_dep_svg(
+  `${outputAbsDir}/npm_ls_all.json`,
+  `${outputAbsDir}/deps.svg`,
   (parent) => filter(parent),
   (child) => filter(child)
 )

@@ -1,0 +1,19 @@
+{
+  "name": "test-amplify-ui",
+  "version": "0.0.0",
+  "license": "MIT",
+  "private": true,
+    "scripts": {
+    "clean_install": "rm -rf node_modules package-lock.json && npm install",
+    "postinstall": "npm run gen_deps_json",
+    "gen_deps_json": "npm run ls_all && node --experimental-strip-types ../gen_deps_json.mts test-amplify-ui",
+    "ls_all": "npm ls --all --json > output/npm_ls_all.json"
+  },
+  "dependencies": {
+    "@aws-amplify/ui-react": "6.13.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}
+
+

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  //"extends": "./tsconfig-common.json", // "strict": true, "sourceMap": true, ...
+  "compilerOptions": {
+    "target": "ES2022",
+
+    // The ES2023 new features will be polyfilled in terms of the target es2022 code.
+    // Do NOT use "esnext"
+    "lib": ["ES2023"],
+
+    "module": "ESNext", // we may prefer to use "ES2022" because "ESNext" depends on the typescript and node versions (?)
+    "moduleResolution": "bundler", // enables extensionless relative imports
+    
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    "noEmit": true, // because we never use tsc to emit js
+    "skipLibCheck": true, // default is false
+  },
+  "include": ["src"]
+}
