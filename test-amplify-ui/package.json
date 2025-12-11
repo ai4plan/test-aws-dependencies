@@ -10,9 +10,9 @@
   },
   "scripts": {
     "clean-install": "rm -rf node_modules package-lock.json && npm install",
-    "postinstall": "npm run ls && npm run gen",
+    "postinstall": "npm run ls && npm run gen_deps_json",
     "ls": "npm ls --all --json > output/npm-ls-all.json",
-    "gen": "node --experimental-strip-types ../generate-dependencies.mts test-aws-amplify-ui-react"
+    "gen_deps_json": "node --experimental-strip-types ../gen_deps_json.mts test-aws-amplify-ui-react"
   }
 }
 

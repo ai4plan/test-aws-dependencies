@@ -17,8 +17,9 @@
     "clean-install-ai4plan-client":              "cd ai4plan-client              && npm run clean-install",
     "clean-install-test-aws-amplify":            "cd test-aws-amplify            && npm run clean-install",
     "clean-install-test-aws-amplify-ui-react":   "cd test-aws-amplify-ui-react   && npm run clean-install",
-    "clean-install-all": "npm run clean-install-ai4plan-client && npm run clean-install-test-aws-amplify && npm run clean-install-test-aws-amplify-ui-react"
+    "clean-install-all": "npm run clean-install-ai4plan-client && npm run clean-install-test-aws-amplify && npm run clean-install-test-aws-amplify-ui-react",
 
+    "diff": "code --diff '../ai4plan/client/package.json' 'ai4plan-client/package.json'"
   }
 }
 
