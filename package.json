@@ -9,14 +9,13 @@
     "graphviz-cli": "2.0.0"
   },
   "scripts": {
-    "amplify":          "cd amplify            && npm run clean_install",
-    "amplify-ui":       "cd amplify-ui         && npm run clean_install",
-    "amplify-ui-sdk-1": "cd amplify-ui-sdk     && npm run clean_install",
-    "amplify-ui-sdk-2": "cd amplify-ui-sdk-2   && npm run clean_install",
-    "amplify-ui-sdk-3": "cd amplify-ui-sdk-3   && npm run clean_install",
+    "amplify":          "cd amplify            && npm run clean_install_and_gen",
+    "amplify-ui":       "cd amplify-ui         && npm run clean_install_and_gen",
+    "amplify-ui-sdk-1": "cd amplify-ui-sdk-1   && npm run clean_install_and_gen",
+    "amplify-ui-sdk-2": "cd amplify-ui-sdk-2   && npm run clean_install_and_gen",
+    "amplify-ui-sdk-3": "cd amplify-ui-sdk-3   && npm run clean_install_and_gen",
+    "all": "npm run amplify && npm run amplify-ui && npm run amplify-ui-sdk-1 && npm run amplify-ui-sdk-2 && npm run amplify-ui-sdk-3",
 
-    "clean_install_all": "npm run amplify && npm run amplify-ui && npm run amplify-ui-sdk-1 && npm run amplify-ui-sdk-2 && npm run amplify-ui-sdk-3",
-        
     "diff": "code --diff '../ai4plan/client/package.json' 'amplify-ui-sdk-3/package.json'"
   }
 }
