@@ -44,7 +44,7 @@
     "fast-xml-parser": "5.2.5"
   },
   "scripts": {
-    "cleaninstall": "rm -rf node_modules package-lock.json && npm install",
+    "clean-install": "rm -rf node_modules package-lock.json && npm install",
     "postinstall": "npm run ls && npm run gen",
     "ls": "npm ls --all --json > output/npm-ls-all.json",
     "gen": "node --experimental-strip-types ../generate-dependencies.mts ai4plan-client",
