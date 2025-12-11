@@ -166,16 +166,9 @@ async function gen_dep_svg(
   writeFile(outputAbsPath, svg_content)
 }
 
-//--------------------------------------------------------------------------------------------------
-const folder = process.argv[2]
-if (!folder) {
-  console.error('Usage: node gen_deps_json.mts <folder>')
-  process.exit(1)
-}
-
 console.log('')
 console.log('-----------------------------------------------------------------')
-console.log(`Generating deps json for folder: ${folder}`)
+console.log(`Generating deps json for folder: ${process.cwd()}`)
 
 const outputAbsDir = `${process.cwd()}/output`
 

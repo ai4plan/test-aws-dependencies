@@ -14,9 +14,9 @@
     "amplify-ui-sdk":   "cd amplify-ui-sdk     && npm run clean_install",
     "amplify-ui-sdk-2": "cd amplify-ui-sdk-2   && npm run clean_install",
 
-    "clean_install_all": "npm run amplify && npm run amplify-ui && npm run amplify-ui-sdk && npm run amplify-ui-sdk-2",
+    "all": "npm run amplify && npm run amplify-ui && npm run amplify-ui-sdk && npm run amplify-ui-sdk-2",
         
-    "diff": "code --diff '../ai4plan/client/package.json' 'ai4plan-client/package.json'"
+    "diff": "code --diff '../ai4plan/client/package.json' 'amplify-ui-sdk/package.json'"
   }
 }
 
