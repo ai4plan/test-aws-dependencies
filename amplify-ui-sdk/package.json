@@ -10,14 +10,14 @@
     "ls_all": "npm ls --all --json > output/npm_ls_all.json"
   },
   "dependencies": {
+    "@aws-amplify/ui-react": "6.13.1",
+
     "@aws-amplify/api": "6.3.21",
     "@aws-amplify/api-rest": "4.6.0",
     "@aws-amplify/auth": "6.17.1",
     "@aws-amplify/core": "6.15.0",
     "@aws-amplify/notifications": "2.0.90",
     "@aws-amplify/storage": "6.11.0",
-
-    "@aws-amplify/ui-react": "6.13.1",
 
     "@aws-sdk/types": "3.930.0",
     "@aws-sdk/client-sts": "3.931.0",
