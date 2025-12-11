@@ -1,5 +1,5 @@
 {
-  "name": "test-amplify-ui-sdk-2",
+  "name": "test-amplify-ui-sdk-3",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
@@ -36,7 +36,21 @@
     "@types/react-dom": "18.3.7"
   },
   "overrides": {
-    "@aws-sdk/types": "$@aws-sdk/types",
+    "@aws-amplify/ui-react":          "$@aws-amplify/ui-react",
+    "@aws-amplify/api":               "$@aws-amplify/api",
+    "@aws-amplify/api-rest":          "$@aws-amplify/api-rest",
+    "@aws-amplify/auth":              "$@aws-amplify/auth",
+    "@aws-amplify/core":              "$@aws-amplify/core",
+    "@aws-amplify/notifications":     "$@aws-amplify/notifications",
+    "@aws-amplify/storage":           "$@aws-amplify/storage",
+    "@aws-sdk/types":                 "$@aws-sdk/types",
+    "@aws-sdk/client-sts":            "$@aws-sdk/client-sts",
+    "@aws-sdk/client-dynamodb":       "$@aws-sdk/client-dynamodb",
+    "@aws-sdk/client-s3":             "$@aws-sdk/client-s3",
+    "@aws-sdk/lib-dynamodb":          "$@aws-sdk/lib-dynamodb",
+    "@aws-sdk/s3-request-presigner":  "$@aws-sdk/s3-request-presigner",
+    "@aws-sdk/credential-providers":  "$@aws-sdk/credential-providers",
+    "@aws-sdk/client-cognito-identity-provider": "$@aws-sdk/client-cognito-identity-provider",
 
     "@aws-amplify/analytics":   "file:../ai4plan-dummy-aws-amplify/analytics",
     "@aws-amplify/api-graphql": "file:../ai4plan-dummy-aws-amplify/api-graphql",
@@ -49,8 +63,6 @@
     "@smithy/types": "4.9.0",
     "@smithy/md5-js": "4.2.5",
     "@smithy/util-buffer-from": "4.2.0",
-    "fast-xml-parser": "5.2.5",
-    "uuid": "11.1.0",
-    "@smithy/fetch-http-handler": "4.1.3"
+    "fast-xml-parser": "5.2.5"
   }
 }
