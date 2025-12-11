@@ -39,9 +39,9 @@
   "overrides": {
     "@aws-sdk/types": "$@aws-sdk/types",
 
-    "@aws-amplify/analytics":   "file:../_dummy-aws-amplify/analytics",
-    "@aws-amplify/api-graphql": "file:../_dummy-aws-amplify/api-graphql",
-    "@aws-amplify/datastore":   "file:../_dummy-aws-amplify/datastore",
+    "@aws-amplify/analytics":   "file:../ai4plan-dummy-aws-amplify/analytics",
+    "@aws-amplify/api-graphql": "file:../ai4plan-dummy-aws-amplify/api-graphql",
+    "@aws-amplify/datastore":   "file:../ai4plan-dummy-aws-amplify/datastore",
 
     "@smithy/util-utf8": "4.2.0",
     "@smithy/util-base64": "4.3.0",
