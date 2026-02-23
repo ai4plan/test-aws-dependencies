@@ -9,9 +9,9 @@
     "graphviz-cli": "2.0.0"
   },
   "scripts": {
-    "amplify":        "cd amplify         && npm run clean_install_and_gen",
-    "amplify-ui":     "cd amplify-ui      && npm run clean_install_and_gen",
-    "amplify-ui-sdk": "cd amplify-ui-sdk  && npm run clean_install_and_gen",
+    "amplify":        "cd amplify         && npm run full_reinstall",
+    "amplify-ui":     "cd amplify-ui      && npm run full_reinstall",
+    "amplify-ui-sdk": "cd amplify-ui-sdk  && npm run full_reinstall",
   
     "all": "npm run amplify && npm run amplify-ui && npm run amplify-ui-sdk",
 
