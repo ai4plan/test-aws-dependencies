@@ -4,7 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "clean_install_and_gen": "npm run clean_install && npm run gen_deps_json",
+    "full_reinstall": "npm run clean_install && npm run gen_deps_json",
     "clean_install": "rm -rf node_modules package-lock.json && npm install",
     "gen_deps_json": "npm run ls_all && node --experimental-strip-types ../gen_deps_json.mts",
     "ls_all": "npm ls --all --json > output/npm_ls_all.json"
@@ -19,6 +19,7 @@
     "@aws-amplify/notifications": "2.0.93",
     "@aws-amplify/storage": "6.13.1",
 
+    "@aws-sdk/types": "3.973.1",
     "@aws-sdk/client-sts": "3.995.0",
     "@aws-sdk/client-dynamodb": "3.995.0",
     "@aws-sdk/client-s3": "3.995.0",
@@ -27,7 +28,6 @@
     "@aws-sdk/credential-providers": "3.995.0",
     "@aws-sdk/client-cognito-identity-provider": "3.995.0",
 
-    "@aws-sdk/types": "3.973.1",
     "@aws-sdk/nested-clients": "3.995.0",
     "@aws-sdk/client-cognito-identity" : "3.995.0",
     "@aws-sdk/util-endpoints": "3.995.0",
